@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT | tiny paws market</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <p class="site-title">tiny paws market</p>
+                <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pet.html">PET</a></li>
+                    <li><a href="#">GOODS</a></li>
+                    <li><a href="guide.html">GUIDE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-hero page-hero-contact">
+            <div class="container">
+                <p class="section-label">CONTACT</p>
+                <h1 class="section-title">お問い合わせ</h1>
+                <p class="section-text">
+                    小動物たちについてのご質問やサイトに関するご連絡は、<br>
+                    下記フォームよりお気軽にお送りください。<br>
+                    ※このサイトはポートフォリオ用の架空サイトのため、実際の返信は行っておりません。
+                </p>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section class="section contact">
+            <div class="container">
+                <form class="contact-form" action="#" method="post">
+                    <!-- お問い合わせ種別 -->
+                    <div class="form-group">
+                        <label for="inquiry-type">お問い合わせ種別<span class="required">必須</span></label>
+                        <select id="inquiry-type" name="inquiry_type" required>
+                            <option value="">選択してください</option>
+                            <option value="pet">ペットについて</option>
+                            <option value="goods">グッズについて</option>
+                            <option value="guide">飼育・お迎えに関する相談</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <!-- お名前 -->
+                    <div class="form-group">
+                        <label for="name">お名前<span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" placeholder="例）山田 花子" required>
+                    </div>
+
+                    <!-- メールアドレス -->
+                    <div class="form-group">
+                        <label for="email">メールアドレス<span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+                    </div>
+
+                    <!-- 電話番号 -->
+                    <div class="form-group">
+                        <label for="tel">電話番号（任意）</label>
+                        <input type="tel" id="tel" name="tel" placeholder="例）09012345678">
+                    </div>
+
+                    <!-- お問い合わせ内容 -->
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+                        <textarea id="message" name="message" rows="8" placeholder="できるだけくわしくご記入ください。"
+                            required></textarea>
+                    </div>
+
+                    <!-- 個人情報・注意書き -->
+                    <div class="form-note">
+                        <p>
+                            ※このサイトは学習・ポートフォリオ用に作成された架空サービスです。<br>
+                            実在の店舗・サービスではなく、送信された内容へのご返信は行っておりません。
+                        </p>
+                    </div>
+
+                    <!-- 送信ボタン -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="logo">tiny paws market</div>
+                <p class="note">
+                    ※このサイトはポートフォリオ用の架空サイトです。<br>
+                    実在の店舗・サービスではありません。
+                </p>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav">
+                    <a href="index.html">HOME</a>
+                    <a href="pet.html">PET</a>
+                    <a href="#">GOODS</a>
+                    <a href="guide.html">GUIDE</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+                <p class="copyright">© tiny paws market</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
